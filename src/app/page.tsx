@@ -1,5 +1,15 @@
-import styles from "./page.module.css";
+"use client";
+// import { useState } from "react";
+// import styles from "./page.module.css";
+import { Button } from "@nextui-org/react";
+import { useState } from "react";
 
 export default function Home() {
-  return <main className={styles.main}>test</main>;
+  const [page, setPage] = useState("aha");
+  return (
+    <main>
+      test {page}
+      <Button>tests</Button>
+    </main>
+  );
 }
